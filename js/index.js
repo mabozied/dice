@@ -1,39 +1,45 @@
 
 
+function gameStart() {
 
-// Create a random Number between 1 - 6
 
-var randomNumber1 = Math.ceil( Math.random(1) * 6 );
+  // Generate a random Number between 1 - 6
 
-// Use the random number created in the last step to pick out
-// a random dice image between dice1.png to dice 6.png
-// and assign it to image 1
+  var randomNumber1 = Math.ceil( Math.random(1) * 6 );
 
-var randomSrc1 = "images/dice" + randomNumber1 +".png";
+  // Use the random number generated in the last step to pick out
+  // a random dice image between dice1.png to dice 6.png
+  // and assign it to image 1
 
-document.querySelector(".img1").setAttribute("src", randomSrc1);
+  var randomSrc1 = "images/dice" + randomNumber1 +".png";
 
-// Create a random Number between 1 - 6
+  document.querySelector(".img1").setAttribute("src", randomSrc1);
 
-var randomNumber2 = Math.ceil( Math.random(1) * 6 );
+  // Generate a random Number between 1 - 6
 
-// Use the random number created in the last step to pick out
-// a random dice image between dice1.png to dice 6.png
-// and assign it to image 2
+  var randomNumber2 = Math.ceil( Math.random(1) * 6 );
 
-var randomSrc2 = "images/dice" + randomNumber2 +".png";
+  // Use the random number generated in the last step to pick out
+  // a random dice image between dice1.png to dice 6.png
+  // and assign it to image 2
 
-document.querySelector(".img2").setAttribute("src", randomSrc2);
+  var randomSrc2 = "images/dice" + randomNumber2 +".png";
 
-// Change the text in the h1, (which currently says Refresh Me) to
-// show which user won or if there was a draw depending on the dice
-// values of player 1 (left) and player 2 (right).
+  document.querySelector(".img2").setAttribute("src", randomSrc2);
 
-if (randomNumber1 > randomNumber2) {
-  document.querySelector("#title").innerHTML = "Player 1 Wins 🏆";
+  // Change the text in the h1, (which currently says Refresh Me) to
+  // show which user won or if there was a draw depending on the dice
+  // values of player 1 (left) and player 2 (right).
+
+  if (randomNumber1 > randomNumber2) {
+    document.querySelector("#title").innerHTML = "player 1 Wins 🏆";
   } else if (randomNumber2 > randomNumber1){
-    document.querySelector("#title").innerHTML = "🏆 Player 2 Wins";
-} else {
-  document.querySelector("#title").innerHTML = "Refres Again!";
+    document.querySelector("#title").innerHTML = "🏆 player 2 Wins";
+  } else {
+    document.querySelector("#title").innerHTML = "Refres Again!";
+  }
+
 }
 
+
+gameStart();
