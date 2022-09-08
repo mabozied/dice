@@ -30,9 +30,9 @@ document.querySelector(".img2").setAttribute("src", randomSrc2);
 // values of player 1 (left) and player 2 (right).
 
 if (randomNumber1 > randomNumber2) {
-  document.querySelector("#title").innerHTML = "Player 1 Wins!";
-} else if (randomNumber2 > randomNumber1){
-  document.querySelector("#title").innerHTML = "Player 2 Wins!";
+  document.querySelector("#title").innerHTML = "Player 1 Wins 🏆";
+  } else if (randomNumber2 > randomNumber1){
+    document.querySelector("#title").innerHTML = "🏆 Player 2 Wins";
 } else {
   document.querySelector("#title").innerHTML = "Refres Again!";
 }
