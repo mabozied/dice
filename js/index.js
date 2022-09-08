@@ -1,5 +1,6 @@
 
 
+
 // Create a random Number between 1 - 6
 
 var randomNumber1 = Math.ceil( Math.random(1) * 6 );
@@ -30,6 +31,9 @@ document.querySelector(".img2").setAttribute("src", randomSrc2);
 
 if (randomNumber1 > randomNumber2) {
   document.querySelector("#title").innerHTML = "Player 1 Wins!";
-} else {
+} else if (randomNumber2 > randomNumber1){
   document.querySelector("#title").innerHTML = "Player 2 Wins!";
+} else {
+  document.querySelector("#title").innerHTML = "Refres Again!";
 }
+
